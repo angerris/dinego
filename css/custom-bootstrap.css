@@ -1,0 +1,60 @@
+.btn-primary {
+  color: #fff;
+  border-radius: 108px;
+  background-color: var(--primary) !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05) inset,
+    0px 4px 13px 0px rgba(0, 0, 0, 0.56);
+  display: flex;
+  padding: 12px 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05) inset,
+    0px 4px 8px 0px rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.btn-primary:active {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05) inset,
+    0px 4px 8px 0px rgba(255, 255, 255, 0.4);
+  transition: 0.3s;
+}
+.btn-login {
+  font-size: 16px;
+}
+.btn-register {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 16px;
+  box-shadow: 0px 2px 21px 0px rgba(255, 255, 255, 0.15);
+  border-radius: 66px;
+  border: 1px solid #fff;
+}
+.btn-register:hover {
+  border: 1px solid #fff;
+  box-shadow: 0px 2px 21px 0px rgba(255, 255, 255, 0.25);
+  text-shadow: none !important;
+}
+.btn-register:active {
+  box-shadow: 0px 2px 21px 0px rgba(255, 255, 255, 0.35);
+}
+
+.btn-link-light {
+  transition: 0.2s;
+  color: #fff;
+}
+.btn-link-light:hover {
+  transition: 0.2s;
+  text-shadow: 0 0 10px #ffffff;
+}
+.btn-link-light:active {
+  transition: 0.2s;
+  text-shadow: 0 0 16px #ffffff;
+}

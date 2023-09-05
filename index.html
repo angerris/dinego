@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS local fallback -->
+    <script src="js/bootstrap-local-fallback.js"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/favicon.ico" type="image/png" />
+    <title>DineGo</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION START -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-logo">
+          <a href="#"><img src="assets/logo.svg" alt="" /></a>
+        </div>
+        <ul class="header-list">
+          <li>
+            <a href="#kitchen" class="btn btn-link-light border-0">Kitchen</a>
+          </li>
+          <li>
+            <a href="#rest" class="btn btn-link-light border-0"
+              >Top Restaurants</a
+            >
+          </li>
+          <li><a href="#map" class="btn btn-link-light border-0">Map</a></li>
+          <li>
+            <a href="#contact" class="btn btn-link-light border-0"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <div class="header-btn-container">
+          <button class="btn btn-link-light btn-login border-0">Log in</button
+          ><button class="btn btn-register">Register</button>
+        </div>
+        <i class="fas fa-bars burger"></i>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+    <!-- HERO SECTION START -->
+    <div class="hero">
+      <div class="hero-section-carousel">
+        <div
+          id="myCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/images/bg-image.png"
+                class="d-block w-100 hero-img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/images/bg-image-2.png"
+                class="d-block w-100 hero-img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/images/bg-image-3.png"
+                class="d-block w-100 hero-img"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container hero-content-container">
+        <div class="hero-content col-md-8">
+          <h1 class="hero-title">ORDER AND TABLE RESERVATION</h1>
+          <p class="hero-subtitle">Open a world of taste possibilities</p>
+          <button class="btn btn-primary hero-btn">
+            See restaurants
+            <img src="assets/images/Frame 72.svg" alt="" width="20" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- HERO SECTION END -->
+    <div id="kitchen"></div>
+    <div class="content-inner-container">
+      <!-- KITCHENS SECTION START -->
+      <div class="kitchens">
+        <div class="container">
+          <h2 class="kitchens-title section-title">KITCHENS</h2>
+          <div class="kitchens-row-container kitchens-desktop">
+            <ul class="kitchens-row">
+              <li class="kitchens-row-item">
+                <img
+                  src="assets/images/italia.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">ITALIA</p>
+              </li>
+              <li class="kitchens-row-item">
+                <img
+                  src="assets/images/china.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">CHINA</p>
+              </li>
+              <li class="kitchens-row-item">
+                <img
+                  src="assets/images/japan.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">JAPAN</p>
+              </li>
+              <li class="kitchens-row-item">
+                <img
+                  src="assets/images/armenia.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">ARMENIA</p>
+              </li>
+              <li class="kitchens-row-item">
+                <img
+                  src="assets/images/georgia.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">GEORGIA</p>
+              </li>
+              <li class="kitchens-row-item">
+                <img
+                  src="assets/images/mexica.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">MEXICA</p>
+              </li>
+              <li class="kitchens-row-item">
+                <img
+                  src="assets/images/greece.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">GREECE</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- KITCHENS SECTION END -->
+      <!-- MOBILE VERSION KITCHENS START-->
+      <div
+        id="kitchensMobileCarousel"
+        class="carousel slide mobile-kitchens-carousel"
+        data-bs-ride="false"
+      >
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row carousel-row">
+              <div class="kitchens-row-item">
+                <img
+                  src="assets/images/italia.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">ITALIA</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-row">
+              <div class="kitchens-row-item">
+                <img
+                  src="assets/images/mexica.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">MEXICA</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-row">
+              <div class="kitchens-row-item">
+                <img
+                  src="assets/images/greece.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">GREECE</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-row">
+              <div class="kitchens-row-item">
+                <img
+                  src="assets/images/japan.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">JAPAN</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-row">
+              <div class="kitchens-row-item">
+                <img
+                  src="assets/images/china.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">CHINA</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-row">
+              <div class="kitchens-row-item">
+                <img
+                  src="assets/images/armenia.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">ARMENIA</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-row">
+              <div class="kitchens-row-item">
+                <img
+                  src="assets/images/georgia.svg"
+                  alt=""
+                  class="kitchens-item-img"
+                />
+                <p class="kitchens-item-title">GEORGIA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right arrows -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#kitchensMobileCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#kitchensMobileCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- MOBILE VERSION KITCHENS END-->
+      <div id="rest"></div>
+      <!-- TOP RESTAURANTS SECTION START -->
+      <div class="restaurants">
+        <div class="container">
+          <h2 class="restaurants-title section-title">TOP RESTAURANTS</h2>
+          <!-- Carousel -->
+          <div
+            id="myCardsCarousel"
+            class="carousel slide desktop-carousel"
+            data-bs-ride="false"
+          >
+            <!-- Slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row carousel-row">
+                  <!-- first card -->
+                  <div class="carousel-card col-md-3">
+                    <img
+                      src="assets/images/card-1.png"
+                      alt=""
+                      class="carousel-card-img"
+                    />
+                    <p class="carousel-card-title">12 Ktor Pizza</p>
+                    <div class="card-rating">
+                      <p class="points">4.3</p>
+                      <p class="reviews">23 reviews</p>
+                    </div>
+                    <div class="card-addresses">
+                      <p>Address 1</p>
+                      <p>Address 2</p>
+                      <p>Address 3</p>
+                      <p>Address 4</p>
+                      <p>Address 5</p>
+                    </div>
+                  </div>
+                  <!-- second card -->
+                  <div class="carousel-card col-md-3">
+                    <img
+                      src="assets/images/card-2.png"
+                      alt=""
+                      class="carousel-card-img"
+                    />
+                    <p class="carousel-card-title">Dragon Garden</p>
+                    <div class="card-rating">
+                      <p class="points">4.3</p>
+                      <p class="reviews">23 reviews</p>
+                    </div>
+                    <div class="card-addresses">
+                      <p>Address 1</p>
+                      <p>Address 2</p>
+                      <p>Address 3</p>
+                      <p>Address 4</p>
+                      <p>Address 5</p>
+                      <p>Address 6</p>
+                      <p>Address 7</p>
+                    </div>
+                  </div>
+                  <!-- third card -->
+                  <div class="carousel-card col-md-3">
+                    <img
+                      src="assets/images/card-3.png"
+                      alt=""
+                      class="carousel-card-img"
+                    />
+                    <p class="carousel-card-title">Lebanon Shawarma</p>
+                    <div class="card-rating">
+                      <p class="points">4.3</p>
+                      <p class="reviews">23 reviews</p>
+                    </div>
+                    <div class="card-addresses">
+                      <p>Address 1</p>
+                      <p>Address 2</p>
+                      <p>Address 3</p>
+                      <p>Address 4</p>
+                    </div>
+                  </div>
+                  <!-- cards end -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row carousel-row">
+                  <div class="carousel-card col-md-3">
+                    <img
+                      src="assets/images/card-1.png"
+                      alt=""
+                      class="carousel-card-img"
+                    />
+                    <p class="carousel-card-title">12 Ktor Pizza</p>
+                    <div class="card-rating">
+                      <p class="points">4.3</p>
+                      <p class="reviews">23 reviews</p>
+                    </div>
+                    <div class="card-addresses">
+                      <p>Address 1</p>
+                      <p>Address 2</p>
+                      <p>Address 3</p>
+                      <p>Address 4</p>
+                      <p>Address 5</p>
+                    </div>
+                  </div>
+                  <!-- second card -->
+                  <div class="carousel-card col-md-3">
+                    <img
+                      src="assets/images/card-2.png"
+                      alt=""
+                      class="carousel-card-img"
+                    />
+                    <p class="carousel-card-title">Dragon Garden</p>
+                    <div class="card-rating">
+                      <p class="points">4.3</p>
+                      <p class="reviews">23 reviews</p>
+                    </div>
+                    <div class="card-addresses">
+                      <p>Address 1</p>
+                      <p>Address 2</p>
+                      <p>Address 3</p>
+                      <p>Address 4</p>
+                      <p>Address 5</p>
+                      <p>Address 6</p>
+                      <p>Address 7</p>
+                    </div>
+                  </div>
+                  <!-- third card -->
+                  <div class="carousel-card col-md-3">
+                    <img
+                      src="assets/images/card-3.png"
+                      alt=""
+                      class="carousel-card-img"
+                    />
+                    <p class="carousel-card-title">Lebanon Shawarma</p>
+                    <div class="card-rating">
+                      <p class="points">4.3</p>
+                      <p class="reviews">23 reviews</p>
+                    </div>
+                    <div class="card-addresses">
+                      <p>Address 1</p>
+                      <p>Address 2</p>
+                      <p>Address 3</p>
+                      <p>Address 4</p>
+                    </div>
+                  </div>
+                  <!-- cards end -->
+                </div>
+              </div>
+            </div>
+            <!-- Left and right arrows -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCardsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCardsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- MOBILE VERSION CAROUSEL START-->
+          <div
+            id="myCardsMobileCarousel"
+            class="carousel slide mobile-carousel"
+            data-bs-ride="false"
+          >
+            <!-- Slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row carousel-row">
+                  <div class="carousel-card mobile-card">
+                    <img
+                      src="assets/images/card-1.png"
+                      alt=""
+                      class="carousel-card-img"
+                    />
+                    <p class="carousel-card-title">12 Ktor Pizza</p>
+                    <div class="card-rating">
+                      <p class="points">4.3</p>
+                      <p class="reviews">23 reviews</p>
+                    </div>
+                    <div class="card-addresses">
+                      <p>Address 1</p>
+                      <p>Address 2</p>
+                      <p>Address 3</p>
+                      <p>Address 4</p>
+                      <p>Address 5</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row carousel-row">
+                  <div class="carousel-card mobile-card">
+                    <img
+                      src="assets/images/card-2.png"
+                      alt=""
+                      class="carousel-card-img"
+                    />
+                    <p class="carousel-card-title">Dragon Garden</p>
+                    <div class="card-rating">
+                      <p class="points">4.3</p>
+                      <p class="reviews">23 reviews</p>
+                    </div>
+                    <div class="card-addresses">
+                      <p>Address 1</p>
+                      <p>Address 2</p>
+                      <p>Address 3</p>
+                      <p>Address 4</p>
+                      <p>Address 5</p>
+                      <p>Address 6</p>
+                      <p>Address 7</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row carousel-row">
+                  <div class="carousel-card mobile-card">
+                    <img
+                      src="assets/images/card-3.png"
+                      alt=""
+                      class="carousel-card-img"
+                    />
+                    <p class="carousel-card-title">Lebanon Shawarma</p>
+                    <div class="card-rating">
+                      <p class="points">4.3</p>
+                      <p class="reviews">23 reviews</p>
+                    </div>
+                    <div class="card-addresses">
+                      <p>Address 1</p>
+                      <p>Address 2</p>
+                      <p>Address 3</p>
+                      <p>Address 4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Left and right arrows -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCardsMobileCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCardsMobileCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- MOBILE VERSION CAROUSEL END-->
+          <button class="btn btn-primary restaurants-btn">
+            See all restaurants
+          </button>
+        </div>
+      </div>
+      <!-- TOP RESTAURANTS SECTION END -->
+      <div id="map"></div>
+
+      <!-- MAP SECTION START -->
+
+      <div class="container">
+        <h2 class="map-title section-title">MAP</h2>
+        <div class="map">
+          <img src="assets/map.png" alt="" srcset="" class="map-img" />
+        </div>
+      </div>
+
+      <!-- MAP SECTION END  -->
+      <div id="contact"></div>
+
+      <!-- CONTACT US SECTION START -->
+      <div class="container">
+        <h2 class="contact-title section-title">CONTACT US</h2>
+        <div class="contact">
+          <a href="#">
+            <img
+              src="assets/images/ri_instagram-fill.svg"
+              alt=""
+              class="contact-icon"
+              width="40"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="assets/images/ri_facebook-fill.svg"
+              alt=""
+              class="contact-icon"
+              width="40"
+          /></a>
+          <a href="#">
+            <img
+              src="assets/images/bxl_gmail.svg"
+              alt=""
+              class="contact-icon"
+              width="40" /></a
+          ><a href="#">
+            <img
+              src="assets/images/simple-icons_x.svg"
+              alt=""
+              class="contact-icon"
+              width="40" /></a
+          ><a href="#">
+            <img
+              src="assets/images/ic_round-phone.svg"
+              alt=""
+              class="contact-icon"
+              width="40"
+          /></a>
+        </div>
+      </div>
+      <!-- CONTACT US SECTION END -->
+    </div>
+    <!-- BOOTSTRAP JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS local fallback -->
+    <script>
+      if (typeof $.fn.modal === "undefined") {
+        document.write('<script src="lib/bootstrap.min.js"><\/script>');
+      }
+    </script>
+    <!-- JS -->
+    <script src="js/index.js"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </body>
+</html>
